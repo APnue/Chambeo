@@ -14,7 +14,7 @@
         <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre de usuario" required><br><br>
         <label for="contrasena">Contraseña:</label><br>
         <input type="password" id="contrasena" name="contrasena"  placeholder="Ingrese una contraseña" required><br><br>
-        <input type="submit" value="Registrar">
+        <input type="submit" value="Iniciar sesión">
             <p>¿No tienes una cuenta? <a href="register.php">Registrarse</a></p>
     </form>
 </body>

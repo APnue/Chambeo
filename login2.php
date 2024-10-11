@@ -34,12 +34,12 @@
                     exit();
                 }else {
 
-                    header("Location: PaginaNoTerminada.html");
+                    header("Location: error404.html");
                     exit();
                 }
 
             }else {
-                header("Location: PaginaNoTerminada.html");
+                header("Location: error404.html");
                     exit();
             }
 ?>  
