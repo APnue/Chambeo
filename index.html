@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Estilo para el botón de editar */
+        .edit-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #2A4A6B;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilo para el contenedor de la imagen de perfil */
+        .profile-img-container {
+            position: relative; /* Necesario para posicionar el botón */
+            display: inline-block; /* Para que el contenedor ajuste al tamaño de la imagen */
+        }
+
+        /* Estilo para el formulario de carga de imágenes */
+        #uploadForm {
+            display: none; /* Inicialmente oculto */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-logo">
+            <img src="https://via.placeholder.com/50" alt="Logo" height="50" width="50">
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Configuración</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Fondo en la parte superior -->
+<div class="header-background">
+    <!-- Imagen de perfil a la izquierda -->
+    <div class="profile-img-container">
+        <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-img-left" id="profileImg">
+        <button class="edit-button" onclick="toggleUploadForm()">✏️</button> <!-- Icono de edición -->
+    </div>
+</div>
+
+<!-- Contenedor principal -->
+<div class="container">
+    <h1 id="userName">Juan Pérez</h1>
+    <p id="userDescription">Descripción: Amante de la tecnología y la naturaleza.</p>
+    <h3 style="margin: 10px;">Comunidades a las que pertenezco</h3>
+    <p>.</p><br>
+    <p>.</p><br>
+    <p>.</p><br>
+    
+    <button type="button" class="btn btn-outline-primary" onclick="editPreferences()">Modificar Preferencias</button>
+    
+    <div id="preferencesForm" class="hidden">
+        <textarea id="preferencesInput" rows="4" cols="50" class="form-control">Café, Viajes, Deportes</textarea><br>
+        <button type="button" class="btn btn-outline-secondary" onclick="savePreferences()">Guardar</button>
+        <button type="button" class="btn btn-outline-secondary" onclick="cancelEdit()">Cancelar</button>
+    </div>
+
+    <!-- Formulario para cargar nueva imagen -->
+    <div id="uploadForm">
+        <h3>Cargar nueva imagen de perfil</h3>
+        <form action="upload_image.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <input type="submit" value="Actualizar Imagen">
+        </form>
+    </div>
+</div>
+
+<script>
+    // Función para mostrar/ocultar el formulario de carga de imagen
+    function toggleUploadForm() {
+        const form = document.getElementById('uploadForm');
+        form.style.display = form.style.display === 'none' || form.style.display === '' ? 'block' : 'none';
+    }
+
+    function editPreferences() {
+        document.getElementById('preferencesForm').classList.remove('hidden');
+        document.getElementById('preferencesList').classList.add('hidden');
+    }
+
+    function savePreferences() {
+        const input = document.getElementById('preferencesInput').value;
+        const preferencesArray = input.split(',').map(item => item.trim());
+        const preferencesList = document.getElementById('preferencesList');
+        
+        preferencesList.innerHTML = '';
+        preferencesArray.forEach(preference => {
+            const li = document.createElement('li');
+            li.textContent = preference;
+            preferencesList.appendChild(li);
+        });
+
+        cancelEdit();
+    }
+
+    function cancelEdit() {
+        document.getElementById('preferencesForm').classList.add('hidden');
+        document.getElementById('preferencesList').classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>
