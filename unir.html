@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunidades.html</title>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>
+var __adobewebfontsappname__="dreamweaver"
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script src="http://use.edgefonts.net/artifika:n4:default.js" type="text/javascript"></script>
+<style type="text/css">
+  .comments-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.comments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.comments-table th, .comments-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.rating {
+    font-size: 18px; /* Aumentar tamaño de las estrellas */
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #CBEDE8;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #CBEDE8;
+}
+</style>
+</head>
+<body style="padding-top: 70px" onLoad="MM_preloadImages('Imagenes/SliderImage2.png','Imagenes/SliderImage2_2.png','Imagenes/SliderImage1_2.png','Imagenes/SliderImage3_2.png','Imagenes/SliderImage4_2.png','Imagenes/SliderImage5_2.png','Imagenes/SliderImage6_2.png','Imagenes/SliderImage7_2.png','Imagenes/SliderImage8_2.png')">
+	 <audio id="audio" src="Audios/Audio1.mp3" autoplay></audio>
+
+    <script>
+        var audio = document.getElementById("audio");
+        window.onload = function() {
+            audio.play();
+        };
+    </script>
+<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: #2E4850" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+	<li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen1_Slider','','Imagenes/SliderImage2_2.jpg',1)"><img class="d-block mx-auto" src="Imagenes/SliderImage2.jpg" alt="Slider1" width="1200px" height="630px" id="Imagen1_Slider"></a>
+      <div class="carousel-caption">
+		  <h4 class="rounded-frame">Comunidad 1</h4>
+        <p >"Medio Ambiente"</p>
+      </div>
+    </div>
+    <div class="carousel-item"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen2_Slider','','Imagenes/SliderImage1_2.png',1)"><img class="d-block mx-auto" src="Imagenes/SliderImage1.png" alt="" width="1200" height="630" id="Imagen2_Slider"></a>
+      <div class="carousel-caption">
+	    <h4 class="rounded-frame">Real <span style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif">Comunidad 2</span></h4>
+        <p>"Arquitectura"</p>
+      </div>
+    </div>
+    <div class="carousel-item"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen3_Slider','','Imagenes/SliderImage3_2.jpg',1)"><img class="d-block mx-auto" src="Imagenes/SliderImage3.jpg" alt="" width="1200" height="630" id="Imagen3_Slider"></a>
+      <div class="carousel-caption">
+<h4 class="rounded-frame">Comunidad 3 </h4>
+        <p>"Gamers LOL"</p>
+      </div>
+    </div>
+    <div class="carousel-item"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen4_Slider','','Imagenes/SliderImage4_2.png',1)"><img class="d-block mx-auto" src="Imagenes/SliderImage4.png" alt="" width="1200" height="630" id="Imagen4_Slider"></a>
+      <div class="carousel-caption">
+		  <h4 class="rounded-frame">Comunidad 4</h4>
+        <p>"Diseñadores web"</p>
+      </div>
+    </div>
+	<div  class="carousel-item"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen5_Slider','','Imagenes/SliderImage5_2.png',1)"><img class="d-block mx-auto" src="Imagenes/SliderImage5.png" alt="" width="1200" height="630" id="Imagen5_Slider"></a>
+      <div class="carousel-caption">
+		  <h4 class="rounded-frame">Comunidad 5</h4>
+        <p>"Basketball"</p>
+      </div>
+    </div>
+    
+  </div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFFFFF"> <a class="navbar-brand" href="#"><img class="d-block mx-auto" src="Imagenes\Caltech.jpg" alt="Icon" width="100" height="100"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item"> <a class="nav-link" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;" href="Inicio.html">Inicio</a> </li>
+      <li class="nav-item"> <a class="nav-link" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;">Comunidades</a> </li>
+      
+	<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="PaginaNoTerminada.html" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;"> Configuracion </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" >Idioma</a>
+			<a class="dropdown-item" >Perfil</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" action="login.php">Foros</a> </div>
+      </li>
+
+		<div style="color: #FFFFFF">----------------------------------------------------------------------------------------------------------------------------------------------------------------
+		</div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar comunidades" aria-label="Search">
+    </form>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+</nav>
+<hr>
+<main>
+<center>
+<table width="92%" height="1200" border="0" style="background-color: #FFFFFF" class="my-table">
+  <tbody>
+<tr>
+                <th>Usuario</th>
+                <th>Comentario</th>
+                <th>Puntuación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="Imagenes/usuario6.jpg" alt="Usuario 1" class="user-photo">
+                    <span>Juan Pérez</span>
+                </td>
+                <td>¡Me encanta la tecnología! Siempre estoy buscando las últimas novedades.</td>
+                <td>
+                    <span class="rating">⭐⭐⭐⭐☆</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Imagenes/usuario5.jpg" alt="Usuario 2" class="user-photo">
+                    <span>María García</span>
+                </td>
+                <td>Las innovaciones en inteligencia artificial son fascinantes.</td>
+                <td>
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Imagenes/usuario3.jpg" alt="Usuario 3" class="user-photo">
+                    <span>Carlos López</span>
+                </td>
+                <td>¡No puedo esperar para el próximo lanzamiento de gadgets!</td>
+                <td>
+                    <span class="rating">⭐⭐⭐☆☆</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Imagenes/usuario4.jpg" alt="Usuario 4" class="user-photo">
+                    <span>Ana Martínez</span>
+                </td>
+                <td>La tecnología cambia tan rápido, ¡es difícil mantenerse al día!</td>
+                <td>
+                    <span class="rating">⭐⭐⭐⭐☆</span>
+                </td>
+            </tr>
+            <tr>
+              <td> <h3>Deja tu comentario:</h3>
+    <form class="comment-form">
+        <textarea placeholder="Escribe tu comentario aquí..." required></textarea>
+        <input type="submit" value="Enviar Comentario">
+    </form></td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+      
+  </tbody>
+</table>
+</center>
+</main>
+<hr>
+   <footer width="100%" height="800" style="background-color: #2E4850">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Redes Sociales</h4>
+                <div class="footer-text">
+                    <a href="https://www.facebook.com/profile.php?id=100089965698623&mibextid=ZbWKwL"><img src="Imagenes/Facebook.png" width="40px" height="40px" alt=" Facebook"></a>
+                     <a href="https://www.facebook.com/profile.php?id=100071136506118"><img src="Imagenes/Instagram.png" width="40px" height="40px" alt=" Instagram"></a>
+					 <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="Imagenes/Twitter.png" width="40px" height="40px" alt=" Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-text">
+                <h4>Contacto</h4>
+                <p>Regato 511 Sur, ZONA CENTRO, Durango, Dgo.</p>
+                <p>Teléfono (1): +52 618 131 00 58</p>
+				<p>Teléfono (2): +52 618 839 94 31</p>
+				<p>Teléfono (3): +52 618 242 65 07</p>
+                <p>Email: caltecharquitectos@gmail.com</p>
+            </div>
+			<div style="color: #2E4850">aaaaaaaaaaaaaaaaaaaaaaa</div>
+            <div class="footer-text">
+                <h4>Términos de uso</h4>
+                <p></p>
+                <a href="https://www.asociaciondeinternet.mx/terminos-y-condiciones">Leer más</a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-text">&copy; 2024 CaltechArquitectos. Todos los derechos reservados.</p>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
